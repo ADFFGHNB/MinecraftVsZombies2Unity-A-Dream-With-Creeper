@@ -1,3 +1,30 @@
+# 0.7.4
+## Modified
+- Updated localization.
+- Bumped the resource pack version to 2.
+- Split the sprite used by the three heads of the Triplenser into three separate sprites.
+
+### Balance
+- Gravel-pult
+  - The first projectile can now possibly be gravel.
+
+## Fixed
+- Fixed an issue where the second half of the “Starshard Tutorial” dialogue could not be viewed in the Archive.
+- Fixed an issue where the Furnace’s initial production time was sometimes slightly longer than that of the Gunpowder Barrel.
+- Fixed an issue where the texture would display incorrectly when modifying the slider handle texture using a resource pack.
+- Fixed an issue where the state textures of some UI components, and textures for curves could not be modified by resource packs.
+- Fixed an issue where the splash damage of the Soul Furnace was considered explosion damage.
+- Fixed an issue where carrying Kraken's Backplate caused rolling hay bales to be unable to be blown away.
+- Fixed an issue where CAT-TL MK-II's projectiles would still disappear upon contact with the ground.
+- Fixed an issue where Autotraps would attack bosses.
+- Fixed an issue where contraptions with on-landing effects thrown by the Ejector could not directly destroy Gargoyle Statues or Spawners like other contraptions.
+- Fixed an issue where special monsters such as Locked Chest's Balloon, rolling blocks, and bubbles would not disappear after flying past the left side.
+- Fixed an issue where contraptions on disabled tiles could be upgraded into upgrade contraptions.
+- Fixed an issue where the fallen texture of the Zombie Cat was missing stitch lines.
+- Fixed an issue where the source height of the Amethyst Pylon's Hyperbeam would change depending on the intensity of the light source it receives.
+
+---
+
 # 0.7.3
 ## Added
 - Added Command /cheat all.
