@@ -1429,6 +1429,9 @@ MonoBehaviour:
   - name: entity/armor/cannon
     texture: {fileID: 2800000, guid: fef5240ef6b58184c95282c0fa82357c, type: 3}
     tags: []
+  - name: entity/armor/dance_hat
+    texture: {fileID: 2800000, guid: 99705bc8ed6457f47a2c3c4f04286eb4, type: 3}
+    tags: []
   - name: entity/armor/diamond_helmet
     texture: {fileID: 2800000, guid: 8c33626bd6dc68e43a68a3b6d0b5f0aa, type: 3}
     tags: []
@@ -2239,6 +2242,9 @@ MonoBehaviour:
   - name: entity/enemy/axolotl_suit_pilot_remote
     texture: {fileID: 2800000, guid: 3a160010002fa0e4aa91a0996a004497, type: 3}
     tags: []
+  - name: entity/enemy/backup_dancer
+    texture: {fileID: 2800000, guid: c39df389c3014320bb30831a3e7877a3, type: 3}
+    tags: []
   - name: entity/enemy/balloon
     texture: {fileID: 2800000, guid: 92c38217e084470499178a44014b451c, type: 3}
     tags: []
@@ -2286,6 +2292,9 @@ MonoBehaviour:
     tags: []
   - name: entity/enemy/creaking
     texture: {fileID: 2800000, guid: 47f24c0ff92746549a92b30073f64aa8, type: 3}
+    tags: []
+  - name: entity/enemy/dancing_zombie
+    texture: {fileID: 2800000, guid: da47e8a689e5c9748a96f385479d6ff6, type: 3}
     tags: []
   - name: entity/enemy/drowned
     texture: {fileID: 2800000, guid: 3e733a81660e9e44c83d34979495d2fe, type: 3}
@@ -6195,6 +6204,10 @@ MonoBehaviour:
     index: 2
     sprite: {fileID: -286163847, guid: fef5240ef6b58184c95282c0fa82357c, type: 3}
     tags: []
+  - name: entity/armor/dance_hat
+    index: 0
+    sprite: {fileID: 21300000, guid: 99705bc8ed6457f47a2c3c4f04286eb4, type: 3}
+    tags: []
   - name: entity/armor/diamond_helmet
     index: 0
     sprite: {fileID: -1492098989, guid: 8c33626bd6dc68e43a68a3b6d0b5f0aa, type: 3}
@@ -9133,6 +9146,26 @@ MonoBehaviour:
     index: 0
     sprite: {fileID: 21300000, guid: 3a160010002fa0e4aa91a0996a004497, type: 3}
     tags: []
+  - name: entity/enemy/backup_dancer
+    index: 0
+    sprite: {fileID: 21300000, guid: c39df389c3014320bb30831a3e7877a3, type: 3}
+    tags: []
+  - name: entity/enemy/backup_dancer
+    index: 1
+    sprite: {fileID: 21300002, guid: c39df389c3014320bb30831a3e7877a3, type: 3}
+    tags: []
+  - name: entity/enemy/backup_dancer
+    index: 2
+    sprite: {fileID: 21300004, guid: c39df389c3014320bb30831a3e7877a3, type: 3}
+    tags: []
+  - name: entity/enemy/backup_dancer
+    index: 3
+    sprite: {fileID: 21300006, guid: c39df389c3014320bb30831a3e7877a3, type: 3}
+    tags: []
+  - name: entity/enemy/backup_dancer
+    index: 4
+    sprite: {fileID: 21300008, guid: c39df389c3014320bb30831a3e7877a3, type: 3}
+    tags: []
   - name: entity/enemy/balloon
     index: 0
     sprite: {fileID: 21300000, guid: 92c38217e084470499178a44014b451c, type: 3}
@@ -9268,6 +9301,26 @@ MonoBehaviour:
   - name: entity/enemy/creaking
     index: 5
     sprite: {fileID: 1505890732, guid: 47f24c0ff92746549a92b30073f64aa8, type: 3}
+    tags: []
+  - name: entity/enemy/dancing_zombie
+    index: 0
+    sprite: {fileID: -988255507, guid: da47e8a689e5c9748a96f385479d6ff6, type: 3}
+    tags: []
+  - name: entity/enemy/dancing_zombie
+    index: 1
+    sprite: {fileID: 1325106766, guid: da47e8a689e5c9748a96f385479d6ff6, type: 3}
+    tags: []
+  - name: entity/enemy/dancing_zombie
+    index: 2
+    sprite: {fileID: -1558510385, guid: da47e8a689e5c9748a96f385479d6ff6, type: 3}
+    tags: []
+  - name: entity/enemy/dancing_zombie
+    index: 3
+    sprite: {fileID: 1813253416, guid: da47e8a689e5c9748a96f385479d6ff6, type: 3}
+    tags: []
+  - name: entity/enemy/dancing_zombie
+    index: 4
+    sprite: {fileID: -245819446, guid: da47e8a689e5c9748a96f385479d6ff6, type: 3}
     tags: []
   - name: entity/enemy/drowned
     index: 0

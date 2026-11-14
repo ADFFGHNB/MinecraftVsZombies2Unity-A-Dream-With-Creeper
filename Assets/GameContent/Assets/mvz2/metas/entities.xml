@@ -2055,7 +2055,7 @@
                 <behaviour operator="add" id="mvz2:rickroll_drown_achievement" />
             </behaviours>
             <properties>
-                <float name="mvz2:speed" value="2" />
+                <float name="mvz2:speed" value="6" />
                 <int name="mvz2:cost" value="300" />
             </properties>
         </entity>
@@ -2101,7 +2101,35 @@
                 <int name="mvz2:teleporter_cost" value="-100" />
             </properties>
         </entity>
-
+		<entity template="zombie" id="dancing_zombie" name="舞王僵尸" deathMessage="你也想起舞吗？">
+			<unlock>
+				<condition requiredGroups="mvz2:enemy.dancing_zombie" />
+			</unlock>
+			<behaviours includeSelf="true">
+				<behaviour operator="replace" source="mvz2:enemy_state" id="mvz2:dancing_zombie/state" />
+				<behaviour operator="replace" source="mvz2:humanoid_animation" id="mvz2:dancing_zombie/animation" />
+				<behaviour operator="add" id="mvz2:dancing_zombie" />
+				<behaviour operator="add" id="mvz2:rickroll_drown_achievement" />
+			</behaviours>
+			<properties>
+                <float name="mvz2:maxHealth" value="590" />
+				<id name="mvz2:starting_armor" value="mvz2:dance_hat" />
+				<int name="mvz2:cost" value="150" />
+				<int name="mvz2:teleporter_cost" value="-75" />
+			</properties>
+		</entity>
+		<entity template="zombie" id="backup_dancer" name="伴舞僵尸" deathMessage="你的舞伴先走一步了。">
+			<behaviours includeSelf="true">
+				<behaviour operator="replace" source="mvz2:enemy_state" id="mvz2:backup_dancer/state" />
+				<behaviour operator="add" id="mvz2:boated_enemy" />
+				<behaviour operator="add" id="mvz2:rickroll_drown_achievement" />
+			</behaviours>
+			<properties>
+				<int name="mvz2:cost" value="50" />
+				<int name="mvz2:teleporter_cost" value="-25" />
+			</properties>
+		</entity>
+		
         <!-- Halloween Enemies -->
         <entity template="humanoid" id="skeleton" name="骷髅" deathMessage="被射成刺猬了！">
             <unlock>
@@ -2217,6 +2245,7 @@
                 <color name="mvz2:bloodColorCensored" value="#007F00FF" />
 
                 <int name="mvz2:cost" value="75" />
+                <int name="mvz2:waterInteraction" value="3" />
             </properties>
         </entity>
         <entity template="smallSpider" id="cave_spider" name="洞穴蜘蛛" deathMessage="你有蜂蜜瓶还是牛奶桶呢？都没有。">

@@ -1921,7 +1921,17 @@
             <bool name="teleporter_evocation_disabled" value="true" />
         </properties>
     </stage>
-
+	<stage id="DWC_test_stage" name="测试关卡" needBlueprints="true" type="minigame" startEnergy="9900" music="mvz2:minigame">
+		<clear pickupModel="mvz2:entity.trophy" trophy="true" />
+		<spawns flags="10" pointsMultiplier="1" pointsAddition="1">
+			<spawn id="mvz2:dancing_zombie" />
+			<spawn id="mvz2:backup_dancer" />
+		</spawns>
+		<time firstWave="1" />
+		<properties>
+			<bool name="autoCollectAll" value="true" />
+		</properties>
+	</stage>
     <!-- Bosses' Revenge -->
     <stage id="frankensteins_revenge" name="科学怪人的复仇" type="minigame" music="mvz2:ultimate_battle" >
         <model preset="cloudy" />

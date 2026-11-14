@@ -2572,6 +2572,13 @@ MonoBehaviour:
     - Main
     - Music
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b19085ed4c92844e96210b9eac4666e
+    m_Address: mvz2:enemy/prologue/dancing_zombie
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2b4a63ffd329fbf43a452a8934978807
     m_Address: mvz2:ui/musicroom/pause_button
     m_ReadOnly: 0
@@ -2766,6 +2773,13 @@ MonoBehaviour:
     m_SerializedLabels:
     - Main
     - Sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2ddb01fe458d4354a4585fd3a4db708e
+    m_Address: mvz2:enemy/prologue/backup_dancer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2df51b7c63d3eaa49b56d152fe6d6562
     m_Address: mvz2:effect/locked_chest_shadow
@@ -10519,6 +10533,13 @@ MonoBehaviour:
     - Main
     - Sprite
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a78b22057eae4a28ae4e0d2ee887a763
+    m_Address: mvz2:dancing_zombie_bgm
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Sound
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a7bfb2b9a5817f7448f08ace245ac075
     m_Address: mvz2:talk/villager/villager_short2
     m_ReadOnly: 0
@@ -13901,6 +13922,13 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e2c01cfcbdb1f214ea2ff2abc56cae75
     m_Address: mvz2:effect/redline
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2c3f093554749a19e40c969e56edf1e
+    m_Address: mvz2:armor/dance_hat
     m_ReadOnly: 0
     m_SerializedLabels:
     - Main

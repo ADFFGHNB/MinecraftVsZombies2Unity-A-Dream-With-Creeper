@@ -123,7 +123,7 @@ namespace MVZ2.GameContent.Stages
         public const string redDragonsRevenge = "red_dragons_revenge";
         public const string lockedChestsRevenge = "locked_chests_revenge";
         public const string krakensRevenge = "krakens_revenge";
-
+        public const string DWC_test_stage = "DWC_test_stage";
         // Puzzles
         public const string puzzleIZombie = "puzzle_i_zombie";
         public const string puzzleISkeleton = "puzzle_i_skeleton";

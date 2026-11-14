@@ -149,7 +149,13 @@
     <model name="diamond_helmetted_zombie" type="entity" path="mvz2:enemy/prologue/diamond_helmetted_zombie" width="64" height="96" xOffset="10" yOffset="-44">
         <armorconfig>mvz2:humanoid</armorconfig>
     </model>
-
+	<model name="dancing_zombie" type="entity" path="mvz2:enemy/prologue/dancing_zombie" width="64" height="96" xOffset="10" yOffset="-44">
+		<armorconfig>mvz2:humanoid</armorconfig>
+	</model>
+	<model name="backup_dancer" type="entity" path="mvz2:enemy/prologue/backup_dancer" width="64" height="96" xOffset="10" yOffset="-44">
+		<armorconfig>mvz2:humanoid</armorconfig>
+	</model>
+	
     <model name="skeleton" type="entity" path="mvz2:enemy/halloween/skeleton" width="64" height="96" xOffset="10" yOffset="-44">
         <armorconfig>mvz2:humanoid</armorconfig>
     </model>
@@ -658,6 +664,7 @@
     <model name="umbrella_shield" type="armor" path="mvz2:armor/umbrella_shield" width="64" height="100" xOffset="16" yOffset="0" />
     <model name="cannon" type="armor" path="mvz2:armor/cannon" width="61" height="36" xOffset="5" yOffset="7" />
     <model name="pop_captain_cap" type="armor" path="mvz2:armor/pop_captain_cap" width="40" height="12" xOffset="0" yOffset="-6" />
+<model name="dance_hat" type="armor" path="mvz2:armor/dance_hat" width="50" height="19" xOffset="0" yOffset="-9" />
     <model name="mountaineering_helmet" type="armor" path="mvz2:armor/mountaineering_helmet" width="32" height="22" xOffset="0" yOffset="6" />
 
     <!-- HeldItems -->

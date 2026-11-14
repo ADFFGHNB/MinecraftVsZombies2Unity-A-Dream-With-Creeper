@@ -1665,7 +1665,7 @@
         
         <entry id="mvz2:spider">
             <header>
-                <p>蜘蛛可以爬过你的防御。</p>
+                <p>蜘蛛可以爬过你的防御，并且能够游泳。</p>
             </header>
             <properties>
                 <p>生命：<![CDATA[<color=red><var id="mvz2:entity_health" /></color>]]></p>
@@ -1685,7 +1685,7 @@
                 <p>速度：<![CDATA[<color=red><var id="mvz2:entity_speed" /></color>]]></p>
             </properties>
             <flavor>
-                <p>曾蝉联多次“蜘蛛网上冲浪比赛”冠军，只是因为其他蜘蛛不会游泳。</p>
+                <p>洞穴蜘蛛和它的<![CDATA[<ref=[enemies]mvz2:spider>哥哥</ref>]]>跋山涉水，跨过了一个又一个山峰，趟过了一道又一道沟壑。当他们终于抵达目的地的那天，他们才发现服务器回档了。</p>
             </flavor>
         </entry>
         <entry id="mvz2:ghast">
@@ -2184,6 +2184,30 @@
                 <p>但他的运气很好，他在海底找到了一堆美西螈号机甲碎片，后来他通过神奇的逆向科技和更高等级的工作台重新造了一台机甲出来，最终使用火箭逃出了那颗星球。</p>
                 <p/>
                 <p>你问他后来怎么变成溺尸的？呃——我刚才讲的是这个家伙的一名同事的故事。</p>
+            </flavor>
+        </entry>
+        <entry id="mvz2:dancing_zombie">
+            <header>
+                <p/>
+            </header>
+            <properties>
+                <p>生命：<![CDATA[<color=red><var id="mvz2:entity_health" /></color>]]></p>
+                <p>速度：<![CDATA[<color=red><var id="mvz2:entity_speed" /></color>]]></p>
+            </properties>
+            <flavor>
+                <p/>
+            </flavor>
+        </entry>
+        <entry id="mvz2:backup_dancer">
+            <header>
+                <p/>
+            </header>
+            <properties>
+                <p>生命：<![CDATA[<color=red><var id="mvz2:entity_health" /></color>]]></p>
+                <p>速度：<![CDATA[<color=red><var id="mvz2:entity_speed" /></color>]]></p>
+            </properties>
+            <flavor>
+                <p/>
             </flavor>
         </entry>
     </enemies>

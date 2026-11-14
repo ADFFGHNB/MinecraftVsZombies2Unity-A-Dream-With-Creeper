@@ -33,8 +33,13 @@
             <condition required="mvz2:level.mountain_11"/>
         </hiddenUntil>
     </minigame>
+	<minigame id="DWC_test_stage" stage="mvz2:DWC_test_stage" area="mvz2:day" icon="mvz2:arcade/krakens_revenge">
+		<hiddenUntil>
+			<condition required="mvz2:level.mountain_11"/>
+		</hiddenUntil>
+	</minigame>
 
-    <puzzle id="puzzle_i_zombie" stage="mvz2:puzzle_i_zombie" area="mvz2:mausoleum_minigame" icon="mvz2:arcade/i_zombie" />
+	<puzzle id="puzzle_i_zombie" stage="mvz2:puzzle_i_zombie" area="mvz2:mausoleum_minigame" icon="mvz2:arcade/i_zombie" />
     <puzzle id="puzzle_i_skeleton" stage="mvz2:puzzle_i_skeleton" area="mvz2:mausoleum_minigame" icon="mvz2:arcade/i_zombie" />
     <puzzle id="puzzle_can_you_pass_it" stage="mvz2:puzzle_can_you_pass_it" area="mvz2:mausoleum_minigame" icon="mvz2:arcade/i_zombie">
         <hiddenUntil>

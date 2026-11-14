@@ -12,6 +12,7 @@ namespace MVZ2.GameContent.Buffs.Enemies
     {
         public WickedHermitWarppedBuff(string nsp, string name) : base(nsp, name)
         {
+            // 传送完成后把朝向翻过来（只改外观朝向的表现，注意 FLIP_X 也会影响判定方向）
             AddModifier(new BooleanModifier(EngineEntityProps.FLIP_X, true));
         }
     }

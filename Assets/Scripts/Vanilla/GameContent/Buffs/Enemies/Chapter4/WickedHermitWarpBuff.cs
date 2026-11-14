@@ -18,17 +18,20 @@ namespace MVZ2.GameContent.Buffs.Enemies
     {
         public WickedHermitWarpBuff(string nsp, string name) : base(nsp, name)
         {
+            // 传送过程中加上"不碰撞"标记，避免被其他实体挤开或撞到东西
             AddModifier(new IntModifier(EngineEntityProps.COLLISION_DETECTION, IntegerOperator.BitOr, EntityCollisionHelper.DETECTION_NO_COLLISION));
         }
         public override void PostAdd(Buff buff)
         {
             base.PostAdd(buff);
+            // 挂上buff时创建计时器，总共持续 MAX_TIME 帧
             buff.SetProperty(PROP_TIMER, new FrameTimer(MAX_TIME));
         }
         public override void PostUpdate(Buff buff)
         {
             base.PostUpdate(buff);
             var timer = buff.GetProperty<FrameTimer>(PROP_TIMER);
+            // 计时器缺失或已经结束，直接移除buff
             if (timer == null || timer.Expired)
             {
                 buff.Remove();
@@ -40,21 +43,26 @@ namespace MVZ2.GameContent.Buffs.Enemies
             var entity = buff.GetEntity();
             if (entity != null)
             {
+                // 尸体身上不需要继续传送
                 if (entity.IsDead)
                 {
                     buff.Remove();
                     return;
                 }
+                // 到第 WARP_TIME 帧时执行真正的传送（只触发一次）
                 if (timer.PassedFrame(WARP_TIME))
                 {
                     entity.Stun(GetStunDuration(entity));
                     var position = entity.Position;
                     var column = 0;
+                    // 把 x 坐标挪到 column 0 那一列的格子位置，y/z 保持不变
                     position.x = entity.Level.GetEntityColumnX(column);
                     entity.Position = position;
                     entity.Velocity = Vector3.zero;
+                    // 挂上"已传送"buff，负责把外观镜像
                     entity.AddBuff<WickedHermitWarppedBuff>();
                 }
+                // 动画参数：离传送帧越近越接近 1，越远越接近 0
                 var scaleT = 1 - Mathf.Abs(timer.Frame - WARP_TIME) / (float)WARP_TIME;
                 entity.SetAnimationFloat("WarpBlend", scaleT);
             }
@@ -69,16 +77,18 @@ namespace MVZ2.GameContent.Buffs.Enemies
             var entity = buff.GetEntity();
             if (entity != null)
             {
+                // 清掉动画参数，避免残留
                 entity.SetAnimationFloat("WarpBlend", 0);
             }
         }
         public static int GetStunDuration(Entity entity)
         {
             var level = entity.Level;
+            // 眩晕时长由难度决定，数值写在难度配置里
             return level.GetWickedHermitZombieStunTime();
         }
-        public const int MAX_TIME = 20;
-        public const int WARP_TIME = 10;
+        public const int MAX_TIME = 20;   // buff 总共持续 20 帧
+        public const int WARP_TIME = 10;  // 第 10 帧执行传送
         public static readonly VanillaBuffPropertyMeta<FrameTimer> PROP_TIMER = new VanillaBuffPropertyMeta<FrameTimer>("timer");
     }
 }

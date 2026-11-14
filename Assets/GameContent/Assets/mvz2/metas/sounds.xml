@@ -396,6 +396,9 @@
     <sound name="floop">
         <sample path="mvz2:floop" weight="1" />
     </sound>
+    <sound name="dancing_zombie_bgm" loopVolume="0.5">
+        <sample path="mvz2:dancing_zombie_bgm" weight="1" />
+    </sound>
     <sound name="fly_swarm" loopVolume="0.25">
         <sample path="mvz2:fly_swarm" weight="1" />
     </sound>

@@ -23,8 +23,10 @@ namespace MVZ2.GameContent.Enemies
         {
             base.Init(entity);
 
+            // 预览敌人和"我是僵尸"模式里不生成符咒僵尸
             if (!entity.IsPreviewEnemy() && !entity.Level.IsIZombie())
             {
+                // 生成一只符咒僵尸，并记下它的 ID，后面要靠它判断本体要不要传送
                 var talisman = entity.SpawnWithParams(VanillaEnemyID.talismanZombie, entity.Position);
                 SetTalismanZombie(entity, new EntityID(talisman));
             }
@@ -32,15 +34,17 @@ namespace MVZ2.GameContent.Enemies
         protected override void UpdateAI(Entity enemy)
         {
             base.UpdateAI(enemy);
+            // 还没传送过、并且本体活着时才检查
             if (!IsWarpped(enemy) && !enemy.IsDead)
             {
                 var talismanID = GetTalismanZombie(enemy);
                 var talisman = talismanID?.GetEntity(enemy.Level);
+                // 符咒僵尸没了、或者变成了友方，就触发传送
                 if (!talisman.ExistsAndAlive() || !talisman.IsFriendly(enemy))
                 {
                     SetTalismanZombie(enemy, null);
                     enemy.AddBuff<WickedHermitWarpBuff>();
-                    SetWarpped(enemy, true);
+                    SetWarpped(enemy, true); // 打上"已传送"标记，防止重复触发
                     enemy.PlaySound(VanillaSoundID.gapWarp);
                 }
             }
@@ -61,9 +65,11 @@ namespace MVZ2.GameContent.Enemies
         {
             return entity.GetBehaviourField<EntityID>(PROP_TALISMAN_ZOMBIE);
         }
-        public const int MOVE_INTERVAL = 30;
-        public const float TALISMAN_DISTANCE = 80;
+        public const int MOVE_INTERVAL = 30;      // 本文件内没用到，供其他地方引用
+        public const float TALISMAN_DISTANCE = 80; // 同上
+        // 存"是否已经传送过"，避免反复触发传送
         public static readonly VanillaEntityPropertyMeta<bool> PROP_WARPPED = new VanillaEntityPropertyMeta<bool>("warpped");
+        // 存符咒僵尸的实体 ID，用来追踪它是否还活着
         public static readonly VanillaEntityPropertyMeta<EntityID> PROP_TALISMAN_ZOMBIE = new VanillaEntityPropertyMeta<EntityID>("talisman_zombie");
     }
 }
