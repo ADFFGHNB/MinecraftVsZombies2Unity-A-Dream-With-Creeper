@@ -192,6 +192,13 @@ MonoBehaviour:
     - Main
     - Sprite
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 03b425d4c4b656841b799a13e8752bea
+    m_Address: mvz2:contraption/ship/quintspenser
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 03dafdf2ab6ba7e499b6f7a6f350be32
     m_Address: mvz2:mainmenu/view/castle
     m_ReadOnly: 0
@@ -1074,6 +1081,13 @@ MonoBehaviour:
     - Main
     - Model
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1234b201ba05aba4b9354df7aebb1da0
+    m_Address: mvz2:projectile/three_body_otherworld
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 124da4d4c22ca6a4789400d7909f36ba
     m_Address: mvz2:contraption/halloween/soul_furnace
     m_ReadOnly: 0
@@ -1165,6 +1179,13 @@ MonoBehaviour:
     - Main
     - Music
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 13a4d92388c9b584ba1e34024a2b5bb8
+    m_Address: mvz2:entity/creeper/creeperFuse
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Sound
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 13b6d5b3963809543b2c3ae66757af81
     m_Address: mvz2:damage/hit3
     m_ReadOnly: 0
@@ -1213,6 +1234,13 @@ MonoBehaviour:
     m_SerializedLabels:
     - Main
     - Sound
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 147c7e69a66fd0348a7845d642dcacb0
+    m_Address: mvz2:enemy/bay/football_zombie
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 148c98d98027b904fbf234d5a5b60f7a
     m_Address: mvz2:ui/musicroom/bar_frame
@@ -2208,6 +2236,13 @@ MonoBehaviour:
     - Main
     - Sprite
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 243bfdd3153c7ca4e864c1766f35609b
+    m_Address: mvz2:projectile/three_body_light
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2440037b2007e8048a8817eab8c62e4c
     m_Address: mvz2:entity/contraption/stone_eye_ray
     m_ReadOnly: 0
@@ -2277,6 +2312,13 @@ MonoBehaviour:
     m_SerializedLabels:
     - Main
     - Model
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 25481364d0019c04aaf7475f84c2f401
+    m_Address: mvz2:mobile_blueprint/quintspenser
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Sprite
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2562dbc08cdc1bd459d0a70219d7d4e4
     m_Address: mvz2:entity/contraption/hellfire_base
@@ -2573,7 +2615,7 @@ MonoBehaviour:
     - Music
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2b19085ed4c92844e96210b9eac4666e
-    m_Address: mvz2:enemy/prologue/dancing_zombie
+    m_Address: mvz2:enemy/bay/dancing_zombie
     m_ReadOnly: 0
     m_SerializedLabels:
     - Main
@@ -2775,7 +2817,7 @@ MonoBehaviour:
     - Sprite
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2ddb01fe458d4354a4585fd3a4db708e
-    m_Address: mvz2:enemy/prologue/backup_dancer
+    m_Address: mvz2:enemy/bay/backup_dancer
     m_ReadOnly: 0
     m_SerializedLabels:
     - Main
@@ -5097,6 +5139,13 @@ MonoBehaviour:
     - Main
     - Sprite
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 50eff0cf5696d684388bf99195758d91
+    m_Address: mvz2:entity/enemy/mutant_creeper
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Sprite
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 50f49ea46da419e4dafa5ecbbd64b606
     m_Address: mvz2:mobile_blueprint/skeleton_mage_frost
     m_ReadOnly: 0
@@ -5236,6 +5285,13 @@ MonoBehaviour:
     m_SerializedLabels:
     - Main
     - Sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 52e0bbf937683764ea75ffea2ca46954
+    m_Address: mvz2:projectile/three_body_red
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 53000fe10b2b2114a9d2a2a204f7c143
     m_Address: mvz2:ui/level/pause_image_loss
@@ -5477,6 +5533,13 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 567b59c501d5f7c4faded153d166a3f1
     m_Address: mvz2:obstacle/gargoyle_statue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 568fe0f358c98754facf08ad7645c026
+    m_Address: mvz2:enemy/bay/pole_vaulting_zombie
     m_ReadOnly: 0
     m_SerializedLabels:
     - Main
@@ -5761,6 +5824,13 @@ MonoBehaviour:
     m_SerializedLabels:
     - Main
     - Sound
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b0e66a9589c62245b468330ca5078b5
+    m_Address: mvz2:projectile/three_body_blue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5b197e2b4a8161c4e8f1808052883a63
     m_Address: mvz2:bones/mutant_zombie
@@ -6251,6 +6321,13 @@ MonoBehaviour:
     - Main
     - Sprite
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 61bc4ec13333d1a498e7241ca5f16232
+    m_Address: mvz2:entity/contraption/flint_and_steel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Sprite
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 61c0748c531b0e245accf518bb27e194
     m_Address: mvz2:enemy/mausoleum/reflective_barrier_zombie
     m_ReadOnly: 0
@@ -6363,6 +6440,13 @@ MonoBehaviour:
     - Main
     - Sprite
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6442669dfc62ef44ea0eadde5c7de18a
+    m_Address: mvz2:entity/projectile/three_body
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Sprite
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 647145e0e2357124bb34d53b02f21a84
     m_Address: mvz2:effect/rain
     m_ReadOnly: 0
@@ -6390,6 +6474,20 @@ MonoBehaviour:
     m_SerializedLabels:
     - Main
     - Sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 64eac16ae13bc3d4482b579b26513391
+    m_Address: mvz2:contraption/bay/reverse_bomb
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5172e8b3c96a4d0f9e35a148b27d6f02
+    m_Address: mvz2:contraption/bay/green_eye_detonator
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 64eefb30bf7392440991667798bebe82
     m_Address: mvz2:contraption/palace/nuke
@@ -7594,6 +7692,13 @@ MonoBehaviour:
     - Main
     - Meta
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a69b149d42086e42a615ea3328bb202
+    m_Address: mvz2:entity/contraption/reverse_bomb
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Sprite
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7a7c01cb6b083d741bd5ee8351facda9
     m_Address: mvz2:effect/hoe
     m_ReadOnly: 0
@@ -8245,6 +8350,13 @@ MonoBehaviour:
     - Main
     - Sprite
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 82e1e0d7161da2545ad2661231373482
+    m_Address: mvz2:entity/enemy/pole_vaulting_zombie
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Sprite
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 831f7ad8d2311d448970951982d07ad8
     m_Address: mvz2:misc/explosion_before_3_years
     m_ReadOnly: 0
@@ -8709,6 +8821,13 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8b54263a7ca06cd478193e70b407f293
     m_Address: mvz2:entity/projectile/fire_trail
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b66fb0aa5b77d44f9e360d486f10c2c
+    m_Address: mvz2:entity/armor/football_helmet
     m_ReadOnly: 0
     m_SerializedLabels:
     - Main
@@ -9672,6 +9791,13 @@ MonoBehaviour:
     - Main
     - Sound
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99705bc8ed6457f47a2c3c4f04286eb4
+    m_Address: mvz2:entity/armor/dance_hat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Sprite
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 99f86b6ae5622a442acb03d9a4d0079b
     m_Address: mvz2:enemy/mountain/axolotl_suit
     m_ReadOnly: 0
@@ -10246,6 +10372,13 @@ MonoBehaviour:
     - Main
     - Sprite
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a2db7458e7dcf3e46be74783caad64ac
+    m_Address: mvz2:entity/enemy/ts_creeper
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Sprite
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a3186b48658bcbe458396f03e2f38590
     m_Address: mvz2:entity/contraption/diamond_spikes
     m_ReadOnly: 0
@@ -10308,6 +10441,13 @@ MonoBehaviour:
     m_SerializedLabels:
     - Main
     - Sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a3f13d6624f675b49acd0bddc1bb61a2
+    m_Address: mvz2:projectile/three_body_earth
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a3ffec953f3b51d4fbe1130f7e6f67e5
     m_Address: mvz2:entity/contraption/dispenser
@@ -10538,7 +10678,7 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Main
-    - Sound
+    - Music
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a7bfb2b9a5817f7448f08ace245ac075
     m_Address: mvz2:talk/villager/villager_short2
@@ -11043,6 +11183,13 @@ MonoBehaviour:
     m_SerializedLabels:
     - Main
     - Sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b17ffae0404912947a0147f32074ffaf
+    m_Address: mvz2:enemy/bay/ts_creeper
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b183abb28c7b13c4995d0fc7bfaa8299
     m_Address: mvz2:mainmenu/more_menus
@@ -12121,6 +12268,13 @@ MonoBehaviour:
     - Main
     - Sound
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c39df389c3014320bb30831a3e7877a3
+    m_Address: mvz2:entity/enemy/backup_dancer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Sprite
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c3b5feba947804640b9e3e2d5f1603f9
     m_Address: mvz2:sand_dig1
     m_ReadOnly: 0
@@ -13094,6 +13248,13 @@ MonoBehaviour:
     - Main
     - Model
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d2eb47c7fc4525145949b1baec17f686
+    m_Address: mvz2:projectile/three_body_moon
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d3abb2eb473d06b4dab0a2d3da4c76d0
     m_Address: mvz2:talk/dialog_weird
     m_ReadOnly: 0
@@ -13444,6 +13605,13 @@ MonoBehaviour:
     - Main
     - Model
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da47e8a689e5c9748a96f385479d6ff6
+    m_Address: mvz2:entity/enemy/dancing_zombie
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Sprite
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: da4e3b8e591f879479409aba96766b4e
     m_Address: mvz2:pickup/sapphire
     m_ReadOnly: 0
@@ -13738,6 +13906,13 @@ MonoBehaviour:
     - Main
     - Sprite
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ded21beddf7972fa1a4485deb115edad
+    m_Address: mvz2:armor/football_helmet
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: deeb13e67aa912f44b29bd07001f719c
     m_Address: mvz2:damage/splat/splat2
     m_ReadOnly: 0
@@ -13779,6 +13954,13 @@ MonoBehaviour:
     m_SerializedLabels:
     - Main
     - Model
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dfc65e6d4353cf3428d72432858b7068
+    m_Address: mvz2:entity/enemy/football_zombie
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Sprite
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: dfd23f4bf547c91488f6d7e24b5d60ef
     m_Address: mvz2:choosing
@@ -13849,6 +14031,13 @@ MonoBehaviour:
     m_SerializedLabels:
     - Main
     - Sound
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e128af5f1974519479b8c325cc0dbfeb
+    m_Address: mvz2:entity/enemy/creeper
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Sprite
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e13d63a63bce9fe45a5c703980ec6d6d
     m_Address: mvz2:entity/gargoyle/gargoyle3
@@ -14088,6 +14277,13 @@ MonoBehaviour:
     - Main
     - Sound
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e600b42c946bec54a8a47e1595558777
+    m_Address: mvz2:enemy/bay/creeper
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e6089201204881d4a879044241dd8cf8
     m_Address: mvz2:boing
     m_ReadOnly: 0
@@ -14199,6 +14395,13 @@ MonoBehaviour:
     m_SerializedLabels:
     - Main
     - Sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e794b8510a9b411488064dc4af0d719f
+    m_Address: mvz2:contraption/bay/flint_and_steel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e7e3e3ce1446ec845a9bdbe0320f999e
     m_Address: mvz2:characters/reimu
@@ -14339,6 +14542,13 @@ MonoBehaviour:
     m_SerializedLabels:
     - Main
     - Sprite
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e9db86e42a76a2844b3cfae69f52db58
+    m_Address: mvz2:fire_ignite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Sound
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e9e2d13662f474a4d9ee76c4eaa53bae
     m_Address: mvz2:entity/effect/aim_target
@@ -14647,6 +14857,13 @@ MonoBehaviour:
     - Main
     - Model
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef0a8c5171ef6174fa4e5e9d55c94821
+    m_Address: mvz2:units/pole
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Model
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ef0c4e33486bc0b44bd32da3f6b7c34f
     m_Address: mvz2:entity/effect/smoke
     m_ReadOnly: 0
@@ -14660,6 +14877,13 @@ MonoBehaviour:
     m_SerializedLabels:
     - Main
     - Model
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef17a24cd52444d4ba395720627af3e1
+    m_Address: mvz2:entity/creeper/creeperDeath
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Main
+    - Sound
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ef1e58ae80f487446bacfef20bc8db9c
     m_Address: mvz2:store

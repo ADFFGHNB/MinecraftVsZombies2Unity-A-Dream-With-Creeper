@@ -14,7 +14,11 @@ namespace MVZ2.GameContent.Enemies
         public const string diamondHelmettedZombie = "diamond_helmetted_zombie";
         public const string dancingZombie = "dancing_zombie";
         public const string backupDancer = "backup_dancer";
-
+        public const string footballZombie = "football_zombie";
+        public const string poleVaultingZombie = "pole_vaulting_zombie";
+        public const string creeper = "creeper";
+        public const string tsCreeper = "ts_creeper";
+        public const string pole = "pole";
         public const string skeleton = "skeleton";
         public const string gargoyle = "gargoyle";
         public const string ghost = "ghost";
@@ -95,7 +99,11 @@ namespace MVZ2.GameContent.Enemies
         public static readonly NamespaceID diamondHelmettedZombie = Get(VanillaEnemyNames.diamondHelmettedZombie);
         public static readonly NamespaceID dancingZombie = Get(VanillaEnemyNames.dancingZombie);
         public static readonly NamespaceID backupDancer = Get(VanillaEnemyNames.backupDancer);
-
+        public static readonly NamespaceID footballZombie = Get(VanillaEnemyNames.footballZombie);
+        public static readonly NamespaceID poleVaultingZombie = Get(VanillaEnemyNames.poleVaultingZombie);
+        public static readonly NamespaceID creeper = Get(VanillaEnemyNames.creeper);
+        public static readonly NamespaceID tsCreeper = Get(VanillaEnemyNames.tsCreeper);
+        public static readonly NamespaceID pole = Get(VanillaEnemyNames.pole);
         public static readonly NamespaceID skeleton = Get(VanillaEnemyNames.skeleton);
         public static readonly NamespaceID gargoyle = Get(VanillaEnemyNames.gargoyle);
         public static readonly NamespaceID ghost = Get(VanillaEnemyNames.ghost);

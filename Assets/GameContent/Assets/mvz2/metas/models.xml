@@ -16,6 +16,18 @@
         <armor slot="mvz2:main">
             <anchor>armor</anchor>
         </armor>
+        <!-- 以下两条按具体盔甲 id 单独指定偏移：
+             目的 = 让运行时生成的头盔，精确盖在僵尸 prefab 里那顶“装饰副本”的同一个位置
+             （副本负责卡片图标 / 编辑器里可见 / 跟随滤镜染色）。
+             数值由编辑器脚本 Tools/DWC/Measure Helmet Offsets 实测得出，改帽子摆位后要重新测。 -->
+        <armor slot="mvz2:main" id="mvz2:football_helmet">
+            <anchor>armor</anchor>
+            <offset x="-2.1047" y="-1.8621" z="1" />
+        </armor>
+        <armor slot="mvz2:main" id="mvz2:dance_hat">
+            <anchor>armor</anchor>
+            <offset x="0" y="0" z="2" />
+        </armor>
         <armor slot="mvz2:shield" type="mvz2:large_shield">
             <anchor>shield</anchor>
             <offset x="0" y="-7" z="0" />
@@ -132,6 +144,11 @@
     <model name="anti_gravity_pad" type="entity" path="mvz2:contraption/upgrade/anti_gravity_pad" width="64" height="64" xOffset="0" yOffset="-28" />
     <model name="time_bomb" type="entity" path="mvz2:contraption/mountain/time_bomb" width="64" height="64" xOffset="0" yOffset="-28" />
 
+    <model name="quintspenser" type="entity" path="mvz2:contraption/ship/quintspenser" width="64" height="64" xOffset="0" yOffset="-28" />
+    <model name="flint_and_steel" type="entity" path="mvz2:contraption/bay/flint_and_steel" width="64" height="64" xOffset="0" yOffset="-28" />
+    <model name="reverse_bomb" type="entity" path="mvz2:contraption/bay/reverse_bomb" width="64" height="64" xOffset="0" yOffset="-28" />
+    <model name="green_eye_detonator" type="entity" path="mvz2:contraption/bay/green_eye_detonator" width="64" height="64" xOffset="0" yOffset="-28" />
+    <model name="pole" type="entity" path="mvz2:units/pole" width="64" height="64" xOffset="0" yOffset="-28" />
 
     <!-- Enemies -->
     <model name="zombie" type="entity" path="mvz2:enemy/prologue/zombie" width="64" height="96" xOffset="10" yOffset="-44">
@@ -149,13 +166,24 @@
     <model name="diamond_helmetted_zombie" type="entity" path="mvz2:enemy/prologue/diamond_helmetted_zombie" width="64" height="96" xOffset="10" yOffset="-44">
         <armorconfig>mvz2:humanoid</armorconfig>
     </model>
-	<model name="dancing_zombie" type="entity" path="mvz2:enemy/prologue/dancing_zombie" width="64" height="96" xOffset="10" yOffset="-44">
+	<model name="dancing_zombie" type="entity" path="mvz2:enemy/bay/dancing_zombie" width="64" height="96" xOffset="10" yOffset="-44">
 		<armorconfig>mvz2:humanoid</armorconfig>
 	</model>
-	<model name="backup_dancer" type="entity" path="mvz2:enemy/prologue/backup_dancer" width="64" height="96" xOffset="10" yOffset="-44">
+	<model name="backup_dancer" type="entity" path="mvz2:enemy/bay/backup_dancer" width="64" height="96" xOffset="10" yOffset="-44">
 		<armorconfig>mvz2:humanoid</armorconfig>
 	</model>
-	
+    <model name="football_zombie" type="entity" path="mvz2:enemy/bay/football_zombie" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="pole_vaulting_zombie" type="entity" path="mvz2:enemy/bay/pole_vaulting_zombie" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="creeper" type="entity" path="mvz2:enemy/bay/creeper" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
+    <model name="ts_creeper" type="entity" path="mvz2:enemy/bay/ts_creeper" width="64" height="96" xOffset="10" yOffset="-44">
+        <armorconfig>mvz2:humanoid</armorconfig>
+    </model>
     <model name="skeleton" type="entity" path="mvz2:enemy/halloween/skeleton" width="64" height="96" xOffset="10" yOffset="-44">
         <armorconfig>mvz2:humanoid</armorconfig>
     </model>
@@ -628,6 +656,13 @@
     <model name="hell_planet_otherworld" type="entity" path="mvz2:projectile/hell_planet_otherworld" width="56" height="56" xOffset="0" yOffset="-26" />
     <model name="hell_planet_earth" type="entity" path="mvz2:projectile/hell_planet_earth" width="46" height="46" xOffset="0" yOffset="-21" />
     <model name="hell_planet_moon" type="entity" path="mvz2:projectile/hell_planet_moon" width="26" height="26" xOffset="0" yOffset="-11" />
+    <model name="three_body_blue" type="entity" path="mvz2:projectile/three_body_blue" width="26" height="26" xOffset="0" yOffset="-11" />
+    <model name="three_body_red" type="entity" path="mvz2:projectile/three_body_red" width="26" height="26" xOffset="0" yOffset="-11" />
+    <model name="three_body_otherworld" type="entity" path="mvz2:projectile/three_body_otherworld" width="26" height="26" xOffset="0" yOffset="-11" />
+    <model name="three_body_moon" type="entity" path="mvz2:projectile/three_body_moon" width="26" height="26" xOffset="0" yOffset="-11" />
+    <model name="three_body_earth" type="entity" path="mvz2:projectile/three_body_earth" width="26" height="26" xOffset="0" yOffset="-11" />
+    <model name="three_body_light" type="entity" path="mvz2:projectile/three_body_light" width="26" height="26" xOffset="0" yOffset="-11" />
+
     <model name="shuriken" type="entity" path="mvz2:projectile/shuriken" width="26" height="26" xOffset="0" yOffset="0" />
     <model name="beacon_meteor" type="entity" path="mvz2:projectile/beacon_meteor" width="64" height="64" xOffset="0" yOffset="-25" />
     <model name="firework" type="entity" path="mvz2:projectile/firework" width="38" height="12" xOffset="0" yOffset="0" />
@@ -651,6 +686,7 @@
     <!-- Armors -->
     <model name="leather_cap" type="armor" path="mvz2:armor/leather_cap" width="33" height="14" xOffset="0" yOffset="0" />
     <model name="iron_helmet" type="armor" path="mvz2:armor/iron_helmet" width="33" height="14" xOffset="0" yOffset="0" />
+    <model name="football_helmet" type="armor" path="mvz2:armor/football_helmet" width="33" height="25" xOffset="0" yOffset="0" />
     <model name="diamond_helmet" type="armor" path="mvz2:armor/diamond_helmet" width="33" height="14" xOffset="0" yOffset="0" />
     <model name="boat_item" type="armor" path="mvz2:armor/boat_item" width="32" height="32" xOffset="0" yOffset="0" />
     <model name="mesmerizer_crown" type="armor" path="mvz2:armor/mesmerizer_crown" width="34" height="40" xOffset="0" yOffset="-21" />

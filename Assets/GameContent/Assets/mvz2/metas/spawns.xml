@@ -33,7 +33,7 @@
     </entry>
 	<entry id="dancing_zombie">
 		<entity id="mvz2:dancing_zombie" />
-		<spawn level="1" />
+		<spawn level="3" />
 		<preview count="3" />
 		<terrain water="true" air="true" />
 		<weight base="4000" decreaseStart="5" decreaseEnd="25" decreasePerFlag="180" />

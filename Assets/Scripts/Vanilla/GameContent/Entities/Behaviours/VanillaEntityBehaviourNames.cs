@@ -106,6 +106,8 @@ namespace MVZ2.Vanilla.Entities
         public const string skeletonHorse_Animation = "skeleton_horse/animation";
         public const string skeletonHorse_State = "skeleton_horse/state";
         public const string skeletonHorse_Melee = "skeleton_horse/melee";
+        public const string footballZombie_Melee = "football_zombie/melee";
+        public const string footballZombie_Animation = "football_zombie/animation";
         public const string hellChariot_DeathEffects = "hell_chariot/death_effects";
 
         public const string skeletonMage_State = "skeleton_mage/state";
@@ -113,6 +115,8 @@ namespace MVZ2.Vanilla.Entities
         public const string dancingZombie_State = "dancing_zombie/state";
         public const string dancingZombie_Animation = "dancing_zombie/animation";
         public const string backupDancer_State = "backup_dancer/state";
+        public const string poleVaultingZombie_State = "pole_vaulting_zombie/state";
+        public const string poleVaultingZombie_Animation = "pole_vaulting_zombie/animation";
 
         public const string undeadFlyingObject_State = "undead_flying_object/state";
         public const string popCaptain_Animation = "pop_captain/animation";

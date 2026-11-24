@@ -148,8 +148,14 @@ namespace MVZ2Logic.Models
         }
         public void SetAnimatorBool(string name, bool value)
         {
+            if (name == "Dead" && value && !deathGroupLogDone)
+            {
+                deathGroupLogDone = true;
+                Debug.Log($"[DeathAnim] Model.SetAnimatorBool('{name}', {value}) GraphicGroup={GraphicGroup.GetType().Name}");
+            }
             GraphicGroup.SetAnimatorBool(name, value);
         }
+        private static bool deathGroupLogDone;
         public void SetAnimatorInt(string name, int value)
         {
             GraphicGroup.SetAnimatorInt(name, value);

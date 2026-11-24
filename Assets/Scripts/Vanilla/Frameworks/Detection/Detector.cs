@@ -216,6 +216,8 @@ namespace MVZ2.Vanilla.Detections
                 return false;
             if (!canDetectInvisible && target.IsInvisible())
                 return false;
+            if (!canDetectNoTarget && target.IsNoTarget())
+                return false;
             return true;
         }
         public bool ValidateCollider(EntityDetectionParams self, IEntityCollider target)
@@ -275,6 +277,7 @@ namespace MVZ2.Vanilla.Detections
         public int mask = EntityCollisionHelper.MASK_VULNERABLE;
         public FactionTarget factionTarget = FactionTarget.Hostile;
         public bool canDetectInvisible;
+        public bool canDetectNoTarget;
         public bool includeSelf;
         public bool includeOverlapDisabled;
         private List<IEntityCollider> resultsBuffer = new List<IEntityCollider>();

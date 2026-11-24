@@ -27,10 +27,16 @@ namespace MVZ2Logic.Models
         public void SetAnimationBool(string name, bool value)
         {
             var targetModel = GetModel();
+            if (name == "Dead" && value && !deathModelLogDone)
+            {
+                deathModelLogDone = true;
+                Debug.Log($"[DeathAnim] ModelInterface.SetAnimationBool('{name}', {value}) model={(targetModel.Exists() ? targetModel.gameObject.name : "NULL")}");
+            }
             if (!targetModel.Exists())
                 return;
             targetModel.SetAnimatorBool(name, value);
         }
+        private static bool deathModelLogDone;
         public void SetAnimationInt(string name, int value)
         {
             var targetModel = GetModel();

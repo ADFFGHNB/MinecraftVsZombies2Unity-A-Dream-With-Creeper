@@ -372,6 +372,9 @@
     <sound name="fire_charge">
         <sample path="mvz2:fire_charge" weight="1" />
     </sound>
+    <sound name="fire_ignite">
+        <sample path="mvz2:fire_ignite" weight="1" />
+    </sound>
     <sound name="firework_blast">
         <sample path="mvz2:firework_blast" weight="1" />
     </sound>
@@ -1331,5 +1334,11 @@
     </sound>
     <sound name="zombinator_death">
         <sample path="mvz2:entity/zombinator/death" weight="1" />
+    </sound>
+    <sound name="creeper_death">
+        <sample path="mvz2:entity/creeper/creeperDeath" weight="1" />
+    </sound>
+    <sound name="creeper_fuse">
+        <sample path="mvz2:entity/creeper/creeperFuse" weight="1" />
     </sound>
 </sounds>

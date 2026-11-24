@@ -211,9 +211,16 @@ namespace MVZ2.Level
                 var speed = data.speed;
                 animator.enabled = false;
                 animator.Update(deltaTime * gameSpeed * updateSpeed * speed);
+                if (animator.GetBool("Dead") && deathAnimLogged.Add(animator.GetInstanceID()))
+                {
+                    var s1 = animator.GetCurrentAnimatorStateInfo(1);
+                    var s2 = animator.GetCurrentAnimatorStateInfo(2);
+                    Debug.Log($"[DeathAnim] drive: Dead=True InWater={animator.GetBool("InWater")} leg={s1.IsName("Walk")}/{s1.IsName("Stand")} base.IsDie={s2.IsName("Die")} base.IsStand={s2.IsName("Stand")}");
+                }
             }
             currentEntityAnimatorIndex = (updateCount + startIndex) % count;
         }
+        private static readonly HashSet<int> deathAnimLogged = new HashSet<int>();
         #endregion
 
         #region 属性字段

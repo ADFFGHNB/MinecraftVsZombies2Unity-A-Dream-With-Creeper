@@ -8,7 +8,7 @@ using PVZEngine.Damages;
 using PVZEngine.Definitions;
 using PVZEngine.Entities;
 using PVZEngine.Tools.Random;
-
+using MVZ2.Vanilla.Properties;
 namespace MVZ2.GameContent.Enemies
 {
     [AutoEntityBehaviourDefinition(VanillaEnemyNames.zombieCat)]
@@ -17,6 +17,8 @@ namespace MVZ2.GameContent.Enemies
         public ZombieCat(string nsp, string name) : base(nsp, name)
         {
         }
+        public static readonly VanillaEntityPropertyMeta<bool> PROP_IS_ZOMBIE_CAT =
+            new VanillaEntityPropertyMeta<bool>("isZombieCat");
         public void DeathEffects(Entity entity, DeathInfo deathInfo)
         {
             bool shouldSpawnFly = false;
@@ -41,5 +43,10 @@ namespace MVZ2.GameContent.Enemies
                 entity.SpawnWithParams(VanillaEnemyID.wispFly, entity.GetCenter());
             }
         }
+        public override void Init(Entity entity)
+            {
+                base.Init(entity);
+                entity.SetProperty(PROP_IS_ZOMBIE_CAT, true);
+            }
     }
 }

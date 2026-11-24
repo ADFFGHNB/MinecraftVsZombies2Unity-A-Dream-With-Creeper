@@ -26,6 +26,11 @@ namespace MVZ2Logic.Models.Elements
 
         public void SetBool(string name, bool value)
         {
+            if (name == "Dead" && !deadLogDone)
+            {
+                deadLogDone = true;
+                Debug.Log($"[DeathAnim] AnimatorElement.SetBool ENTER '{name}'={value} on '{gameObject.name}' hasAnimator={(Animator != null)}");
+            }
             Animator.SetBool(name, value);
         }
 
@@ -61,6 +66,7 @@ namespace MVZ2Logic.Models.Elements
         }
         private Animator animator = null!;
         public string? elementName;
+        private bool deadLogDone;
 
     }
 }

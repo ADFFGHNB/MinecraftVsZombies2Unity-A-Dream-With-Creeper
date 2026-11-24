@@ -68,6 +68,11 @@
     <buff id="punchton_achievement" polarity="none" level="5000" target="enemy" />
     <buff id="tnt_ignited" polarity="none" level="3000" target="contraption" />
     <buff id="tnt_charged" polarity="positive" level="1000" target="contraption" />
+    <buff id="creeper_charging" polarity="none" level="3000" target="enemy" />
+    <buff id="creeper_charged" polarity="positive" level="1000" target="enemy" />
+    <buff id="insulated" polarity="negative" level="2000" target="enemy" />
+    <buff id="true_name_release" polarity="positive" level="1000" target="enemy" />
+    <buff id="inverted" polarity="negative" level="3000" target="contraption" />
     <buff id="sacrificed" polarity="none" level="5000" target="contraption" />
     <buff id="projectile_wait" polarity="none" level="1000" target="projectile" />
     <buff id="magichest_invincible" polarity="positive" level="3000" target="contraption" />

@@ -48,13 +48,19 @@ namespace MVZ2.GameContent.Projectiles
         public const string hellPlanetOtherworld = "hell_planet_otherworld";
         public const string hellPlanetEarth = "hell_planet_earth";
         public const string hellPlanetMoon = "hell_planet_moon";
+        public const string threeBodyRed = "three_body_red";
+        public const string threeBodyBlue = "three_body_blue";
+        public const string threeBodyLight = "three_body_light";
+        public const string threeBodyEarth = "three_body_earth";
+        public const string threeBodyMoon = "three_body_moon";
+        public const string threeBodyOtherworld = "three_body_otherworld";
         public const string shuriken = "shuriken";
         public const string beaconMeteor = "beacon_meteor";
         public const string firework = "firework";
         public const string fireworkBig = "firework_big";
         public const string fallingStar = "falling_star";
         public const string explosiveLargeFireball = "explosive_large_fireball";
-
+        
         public const string spectralArrow = "spectral_arrow";
         public const string flint = "flint";
         public const string gravel = "gravel";
@@ -110,6 +116,12 @@ namespace MVZ2.GameContent.Projectiles
         public static readonly NamespaceID hellPlanetOtherworld = Get(VanillaProjectileNames.hellPlanetOtherworld);
         public static readonly NamespaceID hellPlanetEarth = Get(VanillaProjectileNames.hellPlanetEarth);
         public static readonly NamespaceID hellPlanetMoon = Get(VanillaProjectileNames.hellPlanetMoon);
+        public static readonly NamespaceID threeBodyRed = Get(VanillaProjectileNames.threeBodyRed);
+        public static readonly NamespaceID threeBodyBlue = Get(VanillaProjectileNames.threeBodyBlue);
+        public static readonly NamespaceID threeBodyLight = Get(VanillaProjectileNames.threeBodyLight);
+        public static readonly NamespaceID threeBodyEarth = Get(VanillaProjectileNames.threeBodyEarth);
+        public static readonly NamespaceID threeBodyMoon = Get(VanillaProjectileNames.threeBodyMoon);
+        public static readonly NamespaceID threeBodyOtherworld = Get(VanillaProjectileNames.threeBodyOtherworld);
         public static readonly NamespaceID shuriken = Get(VanillaProjectileNames.shuriken);
         public static readonly NamespaceID beaconMeteor = Get(VanillaProjectileNames.beaconMeteor);
         public static readonly NamespaceID firework = Get(VanillaProjectileNames.firework);

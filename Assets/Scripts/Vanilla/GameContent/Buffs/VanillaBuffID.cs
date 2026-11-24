@@ -191,6 +191,9 @@ namespace MVZ2.GameContent.Buffs
             public const string glowstoneEvoke = "glowstone_evoke";
             public const string tntIgnited = "tnt_ignited";
             public const string tntCharged = "tnt_charged";
+            public const string creeperCharging = "creeper_charging";
+            public const string creeperCharged = "creeper_charged";
+            public const string inverted = "inverted";
             public const string sacrificed = "sacrificed";
             public const string magichestInvincible = "magichest_invincible";
             public const string frankensteinShocked = "frankenstein_shocked";
@@ -274,6 +277,9 @@ namespace MVZ2.GameContent.Buffs
             public const string minigameEnemySpeed = "minigame_enemy_speed";
             public const string napstablookAngry = "napstablook_angry";
             public const string frankensteinTransformer = "frankenstein_transformer";
+            public const string creeperCharged = "creeper_charged";
+            public const string trueNameRelease = "true_name_release";
+            public const string insulated = "insulated";
 
             // Chapter 2
             public const string boat = "boat";
@@ -584,6 +590,9 @@ namespace MVZ2.GameContent.Buffs
             public static readonly NamespaceID glowstoneEvoke = Get(VanillaBuffNames.Contraption.glowstoneEvoke);
             public static readonly NamespaceID tntIgnited = Get(VanillaBuffNames.Contraption.tntIgnited);
             public static readonly NamespaceID tntCharged = Get(VanillaBuffNames.Contraption.tntCharged);
+            public static readonly NamespaceID creeperCharging = Get(VanillaBuffNames.Contraption.creeperCharging);
+            public static readonly NamespaceID creeperCharged = Get(VanillaBuffNames.Contraption.creeperCharged);
+            public static readonly NamespaceID inverted = Get(VanillaBuffNames.Contraption.inverted);
             public static readonly NamespaceID sacrificed = Get(VanillaBuffNames.Contraption.sacrificed);
             public static readonly NamespaceID magichestInvincible = Get(VanillaBuffNames.Contraption.magichestInvincible);
             public static readonly NamespaceID frankensteinShocked = Get(VanillaBuffNames.Contraption.frankensteinShocked);
@@ -656,6 +665,9 @@ namespace MVZ2.GameContent.Buffs
             public static readonly NamespaceID minigameEnemySpeed = Get(VanillaBuffNames.Enemy.minigameEnemySpeed);
             public static readonly NamespaceID napstablookAngry = Get(VanillaBuffNames.Enemy.napstablookAngry);
             public static readonly NamespaceID frankensteinTransformer = Get(VanillaBuffNames.Enemy.frankensteinTransformer);
+            public static readonly NamespaceID creeperCharged = Get(VanillaBuffNames.Enemy.creeperCharged);
+            public static readonly NamespaceID trueNameRelease = Get(VanillaBuffNames.Enemy.trueNameRelease);
+            public static readonly NamespaceID insulated = Get(VanillaBuffNames.Enemy.insulated);
 
             // Chapter 2
             public static readonly NamespaceID boat = Get(VanillaBuffNames.Enemy.boat);

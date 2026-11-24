@@ -325,6 +325,14 @@ namespace MVZ2.Vanilla.Entities
         }
         #endregion
 
+        #region 颠倒与真名
+        public static readonly PropertyMeta<NamespaceID> INVERTED_UPGRADE = Get<NamespaceID>("invertedUpgrade");
+        public static NamespaceID? GetInvertedUpgrade(this EntityDefinition entity)
+        {
+            return entity.GetProperty<NamespaceID>(INVERTED_UPGRADE);
+        }
+        #endregion
+
         #region 摩擦力
         public static readonly PropertyMeta<bool> KEEP_GROUND_FRICTION = Get<bool>("KeepGroundFriction");
         public static bool KeepGroundFriction(this Entity entity)

@@ -1,0 +1,25 @@
+
+#nullable enable
+
+using MVZ2.GameContent.Models;
+using MVZ2.Vanilla.Models;
+using MVZ2Logic.Models;
+using PVZEngine.Buffs;
+using PVZEngine.Definitions;
+
+namespace MVZ2.GameContent.Buffs.Contraptions
+{
+    [AutoBuffDefinition(VanillaBuffNames.Contraption.creeperCharged)]
+    public class CreeperChargedBuff : BuffDefinition
+    {
+        public CreeperChargedBuff(string nsp, string name)
+            : base(nsp, name)
+        {
+            AddModelInsertion(
+                LogicModelHelper.ANCHOR_CENTER,
+                VanillaModelKeys.staticParticles,
+                VanillaModelID.staticParticles
+            );
+        }
+    }
+}

@@ -1002,6 +1002,9 @@ MonoBehaviour:
   - name: mobile_blueprint/punchton
     texture: {fileID: 2800000, guid: 1d8a7cdd4327da14ea5a749df090984d, type: 3}
     tags: []
+  - name: mobile_blueprint/quintspenser
+    texture: {fileID: 2800000, guid: 25481364d0019c04aaf7475f84c2f401, type: 3}
+    tags: []
   - name: mobile_blueprint/random_china
     texture: {fileID: 2800000, guid: 739dc404e782a0c4dae8390f142f0cc5, type: 3}
     tags: []
@@ -1440,6 +1443,9 @@ MonoBehaviour:
     tags: []
   - name: entity/armor/flag
     texture: {fileID: 2800000, guid: 58eadcb8281219a418802875c2f38bbe, type: 3}
+    tags: []
+  - name: entity/armor/football_helmet
+    texture: {fileID: 2800000, guid: 8b66fb0aa5b77d44f9e360d486f10c2c, type: 3}
     tags: []
   - name: entity/armor/iron_helmet
     texture: {fileID: 2800000, guid: 4604673f13e91a847a5781f0d106be31, type: 3}
@@ -2293,6 +2299,9 @@ MonoBehaviour:
   - name: entity/enemy/creaking
     texture: {fileID: 2800000, guid: 47f24c0ff92746549a92b30073f64aa8, type: 3}
     tags: []
+  - name: entity/enemy/creeper
+    texture: {fileID: 2800000, guid: e128af5f1974519479b8c325cc0dbfeb, type: 3}
+    tags: []
   - name: entity/enemy/dancing_zombie
     texture: {fileID: 2800000, guid: da47e8a689e5c9748a96f385479d6ff6, type: 3}
     tags: []
@@ -2307,6 +2316,9 @@ MonoBehaviour:
     tags: []
   - name: entity/enemy/emperor_zombie
     texture: {fileID: 2800000, guid: a9654ff76c5f31a4d87e757c55e35a6d, type: 3}
+    tags: []
+  - name: entity/enemy/football_zombie
+    texture: {fileID: 2800000, guid: dfc65e6d4353cf3428d72432858b7068, type: 3}
     tags: []
   - name: entity/enemy/gargoyle
     texture: {fileID: 2800000, guid: 7379af57c598c9a438cfd765804f71e3, type: 3}
@@ -2365,6 +2377,9 @@ MonoBehaviour:
   - name: entity/enemy/mummy
     texture: {fileID: 2800000, guid: eb1d4fd287008034c97609f5686628e6, type: 3}
     tags: []
+  - name: entity/enemy/mutant_creeper
+    texture: {fileID: 2800000, guid: 50eff0cf5696d684388bf99195758d91, type: 3}
+    tags: []
   - name: entity/enemy/mutant_zombie
     texture: {fileID: 2800000, guid: f661948e8fac49542be1f0cbf157b316, type: 3}
     tags: []
@@ -2388,6 +2403,9 @@ MonoBehaviour:
     tags: []
   - name: entity/enemy/parasite_terror_death
     texture: {fileID: 2800000, guid: 7f65243c614e7c64abc683911c4ad91c, type: 3}
+    tags: []
+  - name: entity/enemy/pole_vaulting_zombie
+    texture: {fileID: 2800000, guid: 82e1e0d7161da2545ad2661231373482, type: 3}
     tags: []
   - name: entity/enemy/pop_captain
     texture: {fileID: 2800000, guid: 3751b098f9b403943aaf5f03eb4626e9, type: 3}
@@ -2694,6 +2712,9 @@ MonoBehaviour:
     tags: []
   - name: entity/projectile/stoneball
     texture: {fileID: 2800000, guid: 02b2a6769dd3bb84d92a60b6d1867601, type: 3}
+    tags: []
+  - name: entity/projectile/three_body
+    texture: {fileID: 2800000, guid: 6442669dfc62ef44ea0eadde5c7de18a, type: 3}
     tags: []
   - name: entity/projectile/tnt_model
     texture: {fileID: 2800000, guid: 2dcf2a5a02a900846ab9ca6458a25522, type: 3}
@@ -5375,6 +5396,30 @@ MonoBehaviour:
     index: 0
     sprite: {fileID: 21300000, guid: 1d8a7cdd4327da14ea5a749df090984d, type: 3}
     tags: []
+  - name: mobile_blueprint/quintspenser
+    index: 0
+    sprite: {fileID: 1942643157, guid: 25481364d0019c04aaf7475f84c2f401, type: 3}
+    tags: []
+  - name: mobile_blueprint/quintspenser
+    index: 1
+    sprite: {fileID: -1759985112, guid: 25481364d0019c04aaf7475f84c2f401, type: 3}
+    tags: []
+  - name: mobile_blueprint/quintspenser
+    index: 2
+    sprite: {fileID: -1750502119, guid: 25481364d0019c04aaf7475f84c2f401, type: 3}
+    tags: []
+  - name: mobile_blueprint/quintspenser
+    index: 3
+    sprite: {fileID: -1436936763, guid: 25481364d0019c04aaf7475f84c2f401, type: 3}
+    tags: []
+  - name: mobile_blueprint/quintspenser
+    index: 4
+    sprite: {fileID: 1180298379, guid: 25481364d0019c04aaf7475f84c2f401, type: 3}
+    tags: []
+  - name: mobile_blueprint/quintspenser
+    index: 5
+    sprite: {fileID: 1052787115, guid: 25481364d0019c04aaf7475f84c2f401, type: 3}
+    tags: []
   - name: mobile_blueprint/random_china
     index: 0
     sprite: {fileID: 21300000, guid: 739dc404e782a0c4dae8390f142f0cc5, type: 3}
@@ -6231,6 +6276,18 @@ MonoBehaviour:
   - name: entity/armor/flag
     index: 1
     sprite: {fileID: 21300002, guid: 58eadcb8281219a418802875c2f38bbe, type: 3}
+    tags: []
+  - name: entity/armor/football_helmet
+    index: 0
+    sprite: {fileID: 198037531, guid: 8b66fb0aa5b77d44f9e360d486f10c2c, type: 3}
+    tags: []
+  - name: entity/armor/football_helmet
+    index: 1
+    sprite: {fileID: -1691982766, guid: 8b66fb0aa5b77d44f9e360d486f10c2c, type: 3}
+    tags: []
+  - name: entity/armor/football_helmet
+    index: 2
+    sprite: {fileID: -762300870, guid: 8b66fb0aa5b77d44f9e360d486f10c2c, type: 3}
     tags: []
   - name: entity/armor/iron_helmet
     index: 0
@@ -9310,6 +9367,10 @@ MonoBehaviour:
     index: 5
     sprite: {fileID: 1505890732, guid: 47f24c0ff92746549a92b30073f64aa8, type: 3}
     tags: []
+  - name: entity/enemy/creeper
+    index: 0
+    sprite: {fileID: 21300000, guid: e128af5f1974519479b8c325cc0dbfeb, type: 3}
+    tags: []
   - name: entity/enemy/dancing_zombie
     index: 0
     sprite: {fileID: -988255507, guid: da47e8a689e5c9748a96f385479d6ff6, type: 3}
@@ -9389,6 +9450,54 @@ MonoBehaviour:
   - name: entity/enemy/emperor_zombie
     index: 7
     sprite: {fileID: -1727391113, guid: a9654ff76c5f31a4d87e757c55e35a6d, type: 3}
+    tags: []
+  - name: entity/enemy/football_zombie
+    index: 0
+    sprite: {fileID: 2007738522, guid: dfc65e6d4353cf3428d72432858b7068, type: 3}
+    tags: []
+  - name: entity/enemy/football_zombie
+    index: 1
+    sprite: {fileID: 7157444, guid: dfc65e6d4353cf3428d72432858b7068, type: 3}
+    tags: []
+  - name: entity/enemy/football_zombie
+    index: 2
+    sprite: {fileID: 1134182903, guid: dfc65e6d4353cf3428d72432858b7068, type: 3}
+    tags: []
+  - name: entity/enemy/football_zombie
+    index: 3
+    sprite: {fileID: 2119308857, guid: dfc65e6d4353cf3428d72432858b7068, type: 3}
+    tags: []
+  - name: entity/enemy/football_zombie
+    index: 4
+    sprite: {fileID: 354171394, guid: dfc65e6d4353cf3428d72432858b7068, type: 3}
+    tags: []
+  - name: entity/enemy/football_zombie
+    index: 5
+    sprite: {fileID: 807524095, guid: dfc65e6d4353cf3428d72432858b7068, type: 3}
+    tags: []
+  - name: entity/enemy/football_zombie
+    index: 6
+    sprite: {fileID: -1551559360, guid: dfc65e6d4353cf3428d72432858b7068, type: 3}
+    tags: []
+  - name: entity/enemy/football_zombie
+    index: 7
+    sprite: {fileID: 359848764, guid: dfc65e6d4353cf3428d72432858b7068, type: 3}
+    tags: []
+  - name: entity/enemy/football_zombie
+    index: 8
+    sprite: {fileID: -509162196, guid: dfc65e6d4353cf3428d72432858b7068, type: 3}
+    tags: []
+  - name: entity/enemy/football_zombie
+    index: 9
+    sprite: {fileID: 1461980408, guid: dfc65e6d4353cf3428d72432858b7068, type: 3}
+    tags: []
+  - name: entity/enemy/football_zombie
+    index: 10
+    sprite: {fileID: 770084513, guid: dfc65e6d4353cf3428d72432858b7068, type: 3}
+    tags: []
+  - name: entity/enemy/football_zombie
+    index: 11
+    sprite: {fileID: 1425578207, guid: dfc65e6d4353cf3428d72432858b7068, type: 3}
     tags: []
   - name: entity/enemy/gargoyle
     index: 0
@@ -9682,6 +9791,10 @@ MonoBehaviour:
     index: 4
     sprite: {fileID: -1885844829, guid: eb1d4fd287008034c97609f5686628e6, type: 3}
     tags: []
+  - name: entity/enemy/mutant_creeper
+    index: 0
+    sprite: {fileID: 21300000, guid: 50eff0cf5696d684388bf99195758d91, type: 3}
+    tags: []
   - name: entity/enemy/mutant_zombie
     index: 0
     sprite: {fileID: 1281193560, guid: f661948e8fac49542be1f0cbf157b316, type: 3}
@@ -9837,6 +9950,30 @@ MonoBehaviour:
   - name: entity/enemy/parasite_terror_death
     index: 3
     sprite: {fileID: -1181326684, guid: 7f65243c614e7c64abc683911c4ad91c, type: 3}
+    tags: []
+  - name: entity/enemy/pole_vaulting_zombie
+    index: 0
+    sprite: {fileID: -251464213, guid: 82e1e0d7161da2545ad2661231373482, type: 3}
+    tags: []
+  - name: entity/enemy/pole_vaulting_zombie
+    index: 1
+    sprite: {fileID: -937674002, guid: 82e1e0d7161da2545ad2661231373482, type: 3}
+    tags: []
+  - name: entity/enemy/pole_vaulting_zombie
+    index: 2
+    sprite: {fileID: -1044586491, guid: 82e1e0d7161da2545ad2661231373482, type: 3}
+    tags: []
+  - name: entity/enemy/pole_vaulting_zombie
+    index: 3
+    sprite: {fileID: 1059308721, guid: 82e1e0d7161da2545ad2661231373482, type: 3}
+    tags: []
+  - name: entity/enemy/pole_vaulting_zombie
+    index: 4
+    sprite: {fileID: -1976761741, guid: 82e1e0d7161da2545ad2661231373482, type: 3}
+    tags: []
+  - name: entity/enemy/pole_vaulting_zombie
+    index: 5
+    sprite: {fileID: 1880976328, guid: 82e1e0d7161da2545ad2661231373482, type: 3}
     tags: []
   - name: entity/enemy/pop_captain
     index: 0
@@ -10949,6 +11086,30 @@ MonoBehaviour:
   - name: entity/projectile/stoneball
     index: 0
     sprite: {fileID: 21300000, guid: 02b2a6769dd3bb84d92a60b6d1867601, type: 3}
+    tags: []
+  - name: entity/projectile/three_body
+    index: 0
+    sprite: {fileID: 1262551364, guid: 6442669dfc62ef44ea0eadde5c7de18a, type: 3}
+    tags: []
+  - name: entity/projectile/three_body
+    index: 1
+    sprite: {fileID: -1371451589, guid: 6442669dfc62ef44ea0eadde5c7de18a, type: 3}
+    tags: []
+  - name: entity/projectile/three_body
+    index: 2
+    sprite: {fileID: -1885535475, guid: 6442669dfc62ef44ea0eadde5c7de18a, type: 3}
+    tags: []
+  - name: entity/projectile/three_body
+    index: 3
+    sprite: {fileID: -984858259, guid: 6442669dfc62ef44ea0eadde5c7de18a, type: 3}
+    tags: []
+  - name: entity/projectile/three_body
+    index: 4
+    sprite: {fileID: 1341316197, guid: 6442669dfc62ef44ea0eadde5c7de18a, type: 3}
+    tags: []
+  - name: entity/projectile/three_body
+    index: 5
+    sprite: {fileID: -895122436, guid: 6442669dfc62ef44ea0eadde5c7de18a, type: 3}
     tags: []
   - name: entity/projectile/tnt_model
     index: 0

@@ -32,9 +32,16 @@ namespace MVZ2Logic.Models
                     var animator = element.Animator;
                     animator.enabled = false;
                     animator.Update(deltaTime);
+                    if (!deathStateLogDone && animator.GetBool("Dead"))
+                    {
+                        deathStateLogDone = true;
+                        var info = animator.GetCurrentAnimatorStateInfo(0);
+                        Debug.Log($"[DeathAnim] after Update: Dead={animator.GetBool("Dead")} InWater={animator.GetBool("InWater")} layer0={info.shortNameHash} IsDie={info.IsName("Die")} IsDrown={info.IsName("Drown")} IsStand={info.IsName("Stand")}");
+                    }
                 }
             }
         }
+        private static bool deathStateLogDone;
         public void GetAnimatorsToUpdate(IList<Animator> results)
         {
             foreach (var element in animators)
@@ -59,12 +66,39 @@ namespace MVZ2Logic.Models
         }
         public void SetAnimatorBool(string name, bool value)
         {
+            if (name == "Dead" && value && !deathListLogDone)
+            {
+                deathListLogDone = true;
+                foreach (var element in animators)
+                {
+                    if (element == null)
+                    {
+                        Debug.Log("[DeathAnim] element is NULL");
+                        continue;
+                    }
+                    var animator = element.Animator;
+                    if (animator == null)
+                    {
+                        Debug.Log($"[DeathAnim] element '{element.gameObject.name}' has NULL Animator component");
+                        continue;
+                    }
+                    var ctrl = animator.runtimeAnimatorController;
+                    Debug.Log($"[DeathAnim] calling SetBool on '{animator.gameObject.name}' controller={(ctrl == null ? "NULL" : ctrl.name)}");
+                    animator.SetBool(name, value);
+                    var readBack = animator.GetBool(name);
+                    var paramNames = string.Join(",", System.Linq.Enumerable.Select(animator.parameters, p => p.name + "(" + p.type + ")"));
+                    Debug.Log($"[DeathAnim] after SetBool readback={readBack} params=[{paramNames}]");
+                    Debug.Log($"[DeathAnim] SetBool returned normally on '{animator.gameObject.name}'");
+                }
+                return;
+            }
             foreach (var element in animators)
             {
                 var animator = element.Animator;
                 animator.SetBool(name, value);
             }
         }
+        private static bool deathListLogDone;
         public void SetAnimatorInt(string name, int value)
         {
             foreach (var element in animators)

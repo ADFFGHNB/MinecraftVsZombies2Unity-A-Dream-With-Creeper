@@ -110,6 +110,7 @@ namespace MVZ2.Vanilla.Audios
         public readonly static NamespaceID fireworkTwinkle = Get("firework_twinkle");
         public readonly static NamespaceID fireBreath = Get("fire_breath");
         public readonly static NamespaceID fireCharge = Get("fire_charge");
+        public readonly static NamespaceID fireIgnite = Get("fire_ignite");
         public readonly static NamespaceID finalWave = Get("final_wave");
         public readonly static NamespaceID finalItem = Get("final_item");
         public readonly static NamespaceID fizz = Get("fizz");
@@ -318,6 +319,8 @@ namespace MVZ2.Vanilla.Audios
         public readonly static NamespaceID zombieDeath = Get("zombie_death");
         public readonly static NamespaceID zombinatorCry = Get("zombinator_cry");
         public readonly static NamespaceID zombinatorDeath = Get("zombinator_death");
+        public readonly static NamespaceID creeperDeath = Get("creeper_death");
+        public readonly static NamespaceID creeperFuse = Get("creeper_fuse");
         private static NamespaceID Get(string name)
         {
             return new NamespaceID(VanillaMod.spaceName, name);

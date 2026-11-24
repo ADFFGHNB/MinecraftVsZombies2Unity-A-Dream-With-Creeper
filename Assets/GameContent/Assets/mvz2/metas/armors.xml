@@ -26,6 +26,15 @@
                 <float name="mvz2:maxHealth" value="1110" />
             </props>
         </entry>
+        <entry id="football_helmet" type="mvz2:helmet">
+            <behaviours>
+                <behaviour id="mvz2:damage_state_3" />
+            </behaviours>
+            <props>
+                <id name="mvz2:shell" value="mvz2:metal" />
+                <float name="mvz2:maxHealth" value="1100" />
+            </props>
+        </entry>
         <entry id="diamond_helmet" type="mvz2:helmet">
             <behaviours>
                 <behaviour id="mvz2:damage_state_3" />

@@ -10,6 +10,7 @@ using MVZ2.GameContent.Effects;
 using MVZ2.GameContent.Enemies;
 using MVZ2.GameContent.Pickups;
 using MVZ2.Vanilla.Audios;
+using MVZ2.Vanilla.Callbacks;
 using MVZ2.Vanilla.Carts;
 using MVZ2.Vanilla.Entities;
 using MVZ2.Vanilla.Grids;
@@ -130,6 +131,10 @@ namespace MVZ2.Vanilla.Level
                     damageOutputs.Add(damageOutput);
                 }
             }
+
+            // 伤害结算后广播爆炸事件。敌方爆炸由绿眼本体的 PreTakeDamage 吸收；
+            // 广播用于补充引擎原本不会命中己方器械的同阵营爆炸，避免同一次爆炸重复计能。
+            level.Triggers.RunCallback(VanillaLevelCallbacks.POST_EXPLODE, new VanillaLevelCallbacks.ExplodeParams(level, center, radius, faction, amount, source, FactionTarget.Hostile, filter));
             return damageOutputs.ToArray();
         }
         public static DamageOutput[] ExplodeAgainstFriendly(this LevelEngine level, Vector3 center, float radius, int faction, float amount, DamageEffectList effects, Entity source)
@@ -148,6 +153,9 @@ namespace MVZ2.Vanilla.Level
                     damageOutputs.Add(damageOutput);
                 }
             }
+
+            // 友伤爆炸同样广播，使绿眼引爆器能吸收所有阵营与筛选方向的爆炸。
+            level.Triggers.RunCallback(VanillaLevelCallbacks.POST_EXPLODE, new VanillaLevelCallbacks.ExplodeParams(level, center, radius, faction, amount, source, FactionTarget.Friendly, null));
             return damageOutputs.ToArray();
         }
 

@@ -19,28 +19,31 @@ namespace MVZ2.GameContent.Projectiles
             AddModifier(new Vector3Modifier(EngineEntityProps.SCALE, NumberOperator.Multiply, PROP_SCALE));
             AddModifier(new BooleanModifier(VanillaProjectileProps.NO_DESTROY_OUTSIDE_LAWN, PROP_NO_DESTROY_OUTSIDE_LAWN));
         }
-        public override void Update(Entity entity)
-        {
-            base.Update(entity);
-            var scaleMultiplier = GetScaleMultiplier(entity);
-            scaleMultiplier = scaleMultiplier * 0.9f + Vector3.one * 0.1f;
-            SetScaleMultiplier(entity, scaleMultiplier);
+public override void Update(Entity entity)
+{
+    base.Update(entity);
 
-            var orbitAngle = GetOrbitAngle(entity);
-            orbitAngle += GetOrbitSpeed(entity);
-            SetOrbitAngle(entity, orbitAngle);
+    var scaleMultiplier = GetScaleMultiplier(entity);
+    scaleMultiplier = scaleMultiplier * 0.9f + Vector3.one * 0.1f;
+    SetScaleMultiplier(entity, scaleMultiplier);
 
+    var orbitAngle = GetOrbitAngle(entity);
+    orbitAngle += GetOrbitSpeed(entity);
+    SetOrbitAngle(entity, orbitAngle);
 
-            var parent = entity.Parent;
-            if (parent.ExistsAndAlive())
-            {
-                var orbitDistance = GetOrbitDistance(entity);
-                var targetOffset = Quaternion.Euler(0, orbitAngle, 0) * (Vector3.right * orbitDistance);
-                var targetPosition = parent.GetCenter() + targetOffset;
-                entity.Velocity = (targetPosition - entity.GetCenter());
-            }
-            SetNoDestroyOutsideLawn(entity, entity.GetChildren().Length > 0);
-        }
+    var parent = entity.Parent;
+    bool hasAliveParent = parent != null && parent.ExistsAndAlive();
+
+    if (parent != null && parent.ExistsAndAlive())
+    {
+        var orbitDistance = GetOrbitDistance(entity);
+        var targetOffset = Quaternion.Euler(0, orbitAngle, 0) * (Vector3.right * orbitDistance);
+        var targetPosition = parent.GetCenter() + targetOffset;
+        entity.Velocity = (targetPosition - entity.GetCenter());
+    }
+
+    SetNoDestroyOutsideLawn(entity, hasAliveParent);
+}
 
         public static bool NoDestroyOutsideLawn(Entity entity) => entity.GetBehaviourField<bool>(PROP_NO_DESTROY_OUTSIDE_LAWN);
         public static void SetNoDestroyOutsideLawn(Entity entity, bool value) => entity.SetBehaviourField(PROP_NO_DESTROY_OUTSIDE_LAWN, value);

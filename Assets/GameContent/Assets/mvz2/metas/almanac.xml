@@ -842,6 +842,23 @@
                 <p>……确定它喜欢看的是典故的内容吗？</p>
             </flavor>
         </entry>
+                <entry id="mvz2:quintspenser">
+            <header>
+                <p>五头发射器一次能发射五行的箭矢。如果它位于最外侧的行，则改为向它自己所在的一行额外发射箭矢。</p>
+            </header>
+            <properties>
+                <p>攻击速度：<![CDATA[<color=red>5发/1.5秒</color>]]></p>
+                <p>伤害：<![CDATA[<color=red><var id="mvz2:entity_damage" /></color>]]></p>
+                <p>技能：<![CDATA[<color=red>向场上血量最高的敌人所在的方向发射缓慢飞行，互相环绕的六颗星球，穿透并反复打击敌人</color>]]></p>
+            </properties>
+            <flavor>
+                <p>五头发射器很擅长缩写，看，现在它就省略掉了四句话</p>
+                <p>五头发射器擅长缩写，看，现在它就略掉了三句话</p>
+                <p>五头发射器擅缩写，看，现在它就省了两句话</p>
+                <p>五发善略，观之，今省一言。</p>
+                <p>五发……好了够了</p>
+            </flavor>
+        </entry>
         <entry id="mvz2:firework_dispenser">
             <header>
                 <p>烟花发射器会自动轰击上方高空中的敌人。</p>
@@ -1583,6 +1600,30 @@
             </properties>
             <flavor>
                 <p>戴着铁盔的僵尸好像是生前是个战士一样，其实不是，他只是比较有智商而已。</p>
+            </flavor>
+        </entry>
+        <entry id="mvz2:football_zombie">
+            <header>
+                <p>橄榄球僵尸戴着橄榄球头盔，跑得比普通僵尸更快。</p>
+            </header>
+            <properties>
+                <p>生命：<![CDATA[<color=red><var id="mvz2:entity_health" />+<var id="armor_hp" /></color>]]></p>
+                <p>速度：<![CDATA[<color=red><var id="mvz2:entity_speed" /></color>]]></p>
+            </properties>
+            <flavor>
+                <p>（占位文案，记得替换成你自己的。）</p>
+            </flavor>
+        </entry>
+        <entry id="mvz2:pole_vaulting_zombie">
+            <header>
+                <p>撑杆跳僵尸会撑杆跳过碰到的第一株植物。</p>
+            </header>
+            <properties>
+                <p>生命：<![CDATA[<color=red><var id="mvz2:entity_health" /></color>]]></p>
+                <p>速度：<![CDATA[<color=red><var id="mvz2:entity_speed" /></color>]]></p>
+            </properties>
+            <flavor>
+                <p>（占位文案，记得替换成你自己的。）</p>
             </flavor>
         </entry>
         <entry id="mvz2:diamond_helmetted_zombie">
